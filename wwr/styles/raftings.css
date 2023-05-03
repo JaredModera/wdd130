@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@300&display=swap");
+
+:root {
+    --primary-color: #0D1317;
+    --secondary-color: #248AA0;
+    --accent1-color: #FFFFFF;
+    --accent2-color: #1A4369;
+
+    --heading-font: "courgette", hand;
+    --paragraph-font: "Oswald" serif;
+
+    --nav-background-color: #248AA0;
+    --nav-link-color:  #1A4369;
+    --nav-hover-link-color:#FFFFFF;
+    --nav-hover-background-color: #0D1317;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 1rem;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+h1 {
+    position: absolute;
+    color:  #248AA0;
+}
+
+h2 {
+    color:#1A4369;
+}
+
+p {
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main {
+    max-width: 1000;
+}
+
+article {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px rgba(0, 0, 0, 1);
+    position: absolute;
+    background-color: #248AA0;
+
+}
+
+article img {
+    float: right;
+    
+}
+/* Class Selectors */
+
+div .hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
