@@ -18,17 +18,27 @@
 body {
     display: grid;
 }
+
+div .information {
+    border: 1px #0D1317;
+    margin: 1rem;
+    padding: 1rem;
+}
 h1, h2, h3, h4, h5, h6 {
     padding: 1rem;
     font-family: var(--heading-font);
 }
 
 h1 {
-    position: absolute;
+    position: static;
     color:  #248AA0;
     top: 150px;
     background-color: #ffffffab;
     left: 350px;
+}
+
+h1 .h1_2 {
+    position: relative;
 }
 
 h2 {
@@ -108,7 +118,7 @@ figure {
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 220px;
+    max-width: 250px;
     margin: auto;
 }
 
@@ -201,4 +211,48 @@ div .hero {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 1;
+}
+
+.information {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+}
+.company-information {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+iframe {
+    float: right;
+    width: 600px;
+    height: 300px;
+    margin: .5rem;
+}
+
+.section_1 h2 {
+    padding: 1rem;
+    margin-bottom: 0%;
+}
+
+.employees {
+   display: grid; 
+   margin: 1rem auto;
+   padding-bottom: 1rem;
+   border: 1px solid #248AA0;
+   text-align: center;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 100px 1fr;
+   align-items: center;
+   justify-content: center;
+}
+.employees h2 {
+    font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.employees img {
+    width: 250px;
+    height: auto;
+    
 }
