@@ -1,0 +1,76 @@
+/* universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.2rem;
+    color: #333;
+    background: #fff;
+}
+
+header {
+    margin: 0 auto;
+    width: 600px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 2rem;
+    color: steelblue;
+    text-align: left;
+}
+
+form {
+    width: 600px;
+    margin: 0 auto;
+    padding: .5rem;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem 1rem 0rem 1rem;
+    border: none;
+    padding: 1rem;
+}
+
+label {
+    text-align: left;
+}
+
+/* label [for="q1"]
+label [for="q2"]
+label [for="q3"]
+label [for="q4"] */
+
+
+input, textarea, select {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+button {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0rem 2rem 1rem 2rem;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    padding: .5rem;
+    border-radius: .5rem;
+    color: #fff;
+    background-color: steelblue;
+    
+}
+
+button:hover { 
+    background-color: #fff;
+    color: steelblue;
+    border: 1px solid steelblue;
+}

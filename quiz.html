@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/quiz.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Basic HTML and CSS Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <label for="q1">1. What does the acronym HTML stand for?</label>
+                <input type="text" id="q1" name="q1">
+                
+                <label for="q2">2. How do you link a CSS file into a HTML file?</label>
+                <textarea name="q2" id="q2" cols="30" rows="10"></textarea>
+                
+                <label for="q3">3. Wich of the following is a universal selector in CSS?</label>
+                <select name="q3" id="q3">
+                    <option value="" selected disabled>Choose one ...</option>
+                    <option value=":hover">:hover</option>
+                    <option value="*">*</option>
+                    <option value="main">main</option>
+                    <option value=":root">:root</option>
+                </select>
+
+                <label for="q4">4. What is the lates version of HTML?</label>
+                <input type="number" name="q4" id="q4">
+            </fieldset>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
 </body>
 </html>
