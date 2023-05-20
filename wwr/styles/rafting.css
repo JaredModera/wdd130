@@ -13,6 +13,7 @@
     --nav-link-color:  #1A4369;
     --nav-hover-link-color:#FFFFFF;
     --nav-hover-background-color: #0D1317;
+    --button-hover-bacground-color: #FFE14D;
 }
 
 body {
@@ -29,20 +30,21 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
 }
 
-h1 {
-    position: static;
+.h1-about {
+    position: absolute;
     color:  #248AA0;
     top: 150px;
     background-color: #ffffffab;
     left: 350px;
 }
 
-h1 .h1_2 {
-    position: relative;
+h1, h2 {
+    color:  #248AA0;
 }
 
-h2 {
-    color:#1A4369;
+
+h1 .h1_2 {
+    position: relative;
 }
 
 p {
@@ -114,7 +116,7 @@ article img {
 }
 
 figure {
-    border: thin #c0c0c0 solid;
+    border: 10px solid #FFE14D;
     display: flex;
     flex-flow: column;
     padding: 5px;
@@ -129,6 +131,88 @@ figcaption {
     text-align: center;
 }
 
+/* form styling */
+.universal-form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid#fffccf;
+    border-radius: 1rem;
+    background-color: #248AA0;
+    color: #FFF;
+    display: grid;
+    
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 2px solid rgb(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+legend {
+    font-size: 30px;
+    border: 2px solid rgb(0, 0, 0, 0.1);
+    padding: .5rem;
+    font-family: "courgette", hand;
+    color: #FFE14D;
+}
+
+label, input, button, select, textarea {
+    font-family: "Oswald", serif;
+    font-size: 22px;
+}
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+label[for="user-text"] {
+    text-align: center;
+}
+
+label[for="radio-button1 "] {
+    grid-area: 2 / 1 / 2 / 3;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+input, select, textarea {
+    padding: .5rem;
+}
+
+
+button {
+    width: 150px;
+    text-align: center;
+    font-size: 22px;
+    margin: .3rem auto;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    padding: .5rem;
+    border-radius: .5rem;
+    color: #000;
+    background-color: #FFE14D;
+    
+}
+
+button:hover { 
+    background-color: #fff;
+}
+
+/* footer */
 footer {
     display: grid;
     max-width: 1000px;
@@ -152,6 +236,8 @@ footer img {
     justify-items: end;
     
 }
+
+
 /* Class Selectors */
 .section_1 {
     text-align: center;
@@ -217,8 +303,9 @@ div .hero {
     display: grid;
     grid-template-rows: 100px 1fr;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid rgb(0, 0, 0, 0.1);
+    border: 1px solid #248AA0;
 }
+
 .company-information {
     grid-area: 2 / 1 / 3 / 2;
 }
@@ -226,8 +313,9 @@ div .hero {
 iframe {
     float: right;
     width: 600px;
-    height: 300px;
-    margin: .5rem;
+    height: 280px;
+    margin: 1rem;
+    grid-area: 1 / 2 / 3 / 3;
 }
 
 .section_1 h2 {
@@ -246,13 +334,53 @@ iframe {
    align-items: center;
    justify-content: center;
 }
+
 .employees h2 {
-    font-size: 30px;
+
     grid-column-start: 1;
     grid-column-end: 4;
 }
+
 .employees img {
-    width: 250px;
+    width: 200px;
     height: auto;
-    
 }
+
+/* form item class selectors */
+
+.universal-form {
+    border: 1px solid #248AA0;
+    padding: 1rem;
+}
+
+.universal-form h2 {
+    text-align: center;
+}
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 100px 3fr;
+    margin: .5rem ;
+}
+
+.column2 {
+    grid-template-columns:  200px 1fr;
+    grid-template-rows: 50px repeat(3, 1fr);
+    margin: 1rem ;
+    font-size: 20px;
+}
+
+.column2 p {
+    grid-area: 1 / 1 / 2 / 3;
+    font-family: "Oswald", serif;
+    font-size: 22px;
+    text-align: left;
+}
+
+.column3 {
+    grid-template-columns:  1fr ;
+}
+
