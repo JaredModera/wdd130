@@ -2,14 +2,14 @@
 
 :root {
     --primary-color: #0D1317;
-    --secondary-color: #248AA0;
+    --secondary-color: #1A4369;
     --accent1-color: #FFFFFF;
     --accent2-color: #1A4369;
 
     --heading-font: "courgette", hand;
-    --paragraph-font: "Oswald" serif;
+    --paragraph-font: "Oswald", serif;
 
-    --nav-background-color: #248AA0;
+    --nav-background-color: #1A4369;
     --nav-link-color:  #1A4369;
     --nav-hover-link-color:#FFFFFF;
     --nav-hover-background-color: #0D1317;
@@ -32,14 +32,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .h1-about {
     position: absolute;
-    color:  #248AA0;
+    color:  #1A4369;
     top: 150px;
     background-color: #ffffffab;
     left: 350px;
 }
 
 h1, h2 {
-    color:  #248AA0;
+    color:  #1A4369;
 }
 
 
@@ -49,6 +49,7 @@ h1 .h1_2 {
 
 p {
     padding: 1rem;
+    font-family: "Oswald", serif;
 }
 
 /* article p {
@@ -89,7 +90,7 @@ main {
 article {
     /* 
     margin: 1rem auto;
-    background-color: #248AA0;
+    background-color: #1A4369;
     padding: 1rem;
     border: 1px rgba(0, 0, 0, 1);
     position: absolute; */
@@ -125,7 +126,7 @@ figure {
 }
 
 figcaption {
-    background-color: #248AA0;
+    background-color: #1A4369;
     color: #fff;
     padding: 3px;
     text-align: center;
@@ -144,7 +145,7 @@ form {
     padding: 1rem;
     border: 1px solid#fffccf;
     border-radius: 1rem;
-    background-color: #248AA0;
+    background-color: #1A4369;
     color: #FFF;
     display: grid;
     
@@ -212,6 +213,19 @@ button:hover {
     background-color: #fff;
 }
 
+/* Trips page  */
+
+
+table, th, td {
+    border: 1px solid #1A4369;
+    border-collapse: collapse;
+    margin: 3rem .5rem 1rem 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: "Oswald", serif;
+    text-align: center;
+}
+
 /* footer */
 footer {
     display: grid;
@@ -221,7 +235,7 @@ footer {
     text-align: center;
     align-items: center;
     margin-top: 1rem;
-    border-top: 1px solid #248AA0;
+    border-top: 1px solid #1A4369;
 }
 
 footer p {
@@ -242,7 +256,7 @@ footer img {
 .section_1 {
     text-align: center;
     margin: 1rem auto;
-    border: 1px solid #248AA0;
+    border: 1px solid #1A4369;
 }
 
 .section_1 h2 {
@@ -254,7 +268,7 @@ footer img {
    display: grid; 
    margin: 1rem auto;
    padding-bottom: 1rem;
-   border: 1px solid #248AA0;
+   border: 1px solid #1A4369;
    text-align: center;
    grid-template-columns: repeat(5, 1fr);
    grid-template-rows: 100px 1fr;
@@ -303,7 +317,7 @@ div .hero {
     display: grid;
     grid-template-rows: 100px 1fr;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid #248AA0;
+    border: 1px solid #1A4369;
 }
 
 .company-information {
@@ -327,7 +341,7 @@ iframe {
    display: grid; 
    margin: 1rem auto;
    padding-bottom: 1rem;
-   border: 1px solid #248AA0;
+   border: 1px solid #1A4369;
    text-align: center;
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: 100px 1fr;
@@ -349,7 +363,7 @@ iframe {
 /* form item class selectors */
 
 .universal-form {
-    border: 1px solid #248AA0;
+    border: 1px solid #1A4369;
     padding: 1rem;
 }
 
@@ -384,3 +398,79 @@ iframe {
     grid-template-columns:  1fr ;
 }
 
+/* Trips Class selector */
+.trips-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100px 1fr ;
+}
+
+.trips-grid h2, h1 {
+    text-align: center;
+    grid-area: 1 / 1 / 2 / 3;
+    margin: 1rem;
+    background-color: #1A4369;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+
+}
+.trips {
+    margin: 1rem auto;
+    border: 1px solid #1A4369;
+    text-align: left;
+    padding: 1rem;
+ }
+
+ .trips div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+ }
+ .trips div h1 {
+    grid-area: 1 / 1 / 2/ 3;
+    text-align: left;
+ }
+ 
+ .trips img {
+     width: 200px;
+     height: auto;
+     float: right;
+ }
+
+.call-to-action {
+    border-radius: 1rem;
+    border: 1px solid #1A4369;
+    text-align: center;
+    padding: .5rem;
+    background-color: #FFE14D;
+    margin: 0rem 10rem;
+}
+.call-to-action p{
+    text-align: center;
+    padding: .5rem;
+    background-color: #FFE14D;
+    margin: 0rem;
+}
+
+.button-cta {
+    background-color: #1A4369;
+    color: #fff;
+    display: block;
+    text-align: center;
+    border: none;
+    border-radius: .5em;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-decoration: none;
+    padding: .5em 1em;
+    width: auto;
+}
+
+.button-cta:hover {
+    background-color: #B3282F;
+}
+
+.table h2 {
+    text-align: center;
+    margin-top: 3rem;
+}
